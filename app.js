@@ -499,7 +499,7 @@ const employeeTable = document.getElementById('employeeTable');
 // });
 
 
-let results = employs.filter((item)=> item.hometown == "Hà Nội" );
+let results = employs.filter((employ)=> employ.hometown == "Hà Nội" );
 // results.map(employ =>{
 //     const tr = document.createElement('tr');
 
@@ -543,7 +543,7 @@ let results = employs.filter((item)=> item.hometown == "Hà Nội" );
 // })
 console.log(results);
 
-let results1 = employs.filter((item)=> item.salary >=20000000 && item.children >= 2 )
+let results1 = employs.filter((employ)=> employ.salary >=20000000 && employ.children >= 2 )
 // results1.map(employ => {
 //     const tr = document.createElement('tr');
 
@@ -588,7 +588,7 @@ let results1 = employs.filter((item)=> item.salary >=20000000 && item.children >
 console.log(results1);
 
 
-let results2 = employs.filter((item) => item.maritalStatus == "Married");
+let results2 = employs.filter((employ) => employ.maritalStatus === "Married");
 results2.map(employ => {
     const tr = document.createElement('tr');
     
