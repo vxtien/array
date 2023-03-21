@@ -438,7 +438,7 @@ let employs = [
         level: "junior",
         maritalStatus:"Married",
         children:2,
-        workplace: "Hà Nội"
+        workplace: "HCM"
     },
     {
         name: "Nguyễn Duy 13",
@@ -456,52 +456,179 @@ let employs = [
 
 const employeeTable = document.getElementById('employeeTable');
 
-employs.map(employ => {
-  const tr = document.createElement('tr');
+// employs.map(employ => {
+//   const tr = document.createElement('tr');
 
-  const nameTd = document.createElement('td');
-  nameTd.appendChild(document.createTextNode(employ.name));
-  tr.appendChild(nameTd);
+//   const nameTd = document.createElement('td');
+//   nameTd.appendChild(document.createTextNode(employ.name));
+//   tr.appendChild(nameTd);
 
-  const ageTd = document.createElement('td');
-  ageTd.appendChild(document.createTextNode(employ.age));
-  tr.appendChild(ageTd);
+//   const ageTd = document.createElement('td');
+//   ageTd.appendChild(document.createTextNode(employ.age));
+//   tr.appendChild(ageTd);
 
-  const salaryTd = document.createElement('td');
-  salaryTd.appendChild(document.createTextNode(employ.salary));
-  tr.appendChild(salaryTd);
+//   const salaryTd = document.createElement('td');
+//   salaryTd.appendChild(document.createTextNode(employ.salary));
+//   tr.appendChild(salaryTd);
 
-  const hometownTd = document.createElement('td');
-  hometownTd.appendChild(document.createTextNode(employ.hometown));
-  tr.appendChild(hometownTd);
+//   const hometownTd = document.createElement('td');
+//   hometownTd.appendChild(document.createTextNode(employ.hometown));
+//   tr.appendChild(hometownTd);
 
-  const jobTd = document.createElement('td');
-  jobTd.appendChild(document.createTextNode(employ.job));
-  tr.appendChild(jobTd);
+//   const jobTd = document.createElement('td');
+//   jobTd.appendChild(document.createTextNode(employ.job));
+//   tr.appendChild(jobTd);
 
-  const levelTd = document.createElement('td');
-  levelTd.appendChild(document.createTextNode(employ.level));
-  tr.appendChild(levelTd);
+//   const levelTd = document.createElement('td');
+//   levelTd.appendChild(document.createTextNode(employ.level));
+//   tr.appendChild(levelTd);
 
-  const maritalStatusTd = document.createElement('td');
-  maritalStatusTd.appendChild(document.createTextNode(employ.maritalStatus));
-  tr.appendChild(maritalStatusTd);
+//   const maritalStatusTd = document.createElement('td');
+//   maritalStatusTd.appendChild(document.createTextNode(employ.maritalStatus));
+//   tr.appendChild(maritalStatusTd);
 
-  const childrenTd = document.createElement('td');
-  childrenTd.appendChild(document.createTextNode(employ.children));
-  tr.appendChild(childrenTd);
+//   const childrenTd = document.createElement('td');
+//   childrenTd.appendChild(document.createTextNode(employ.children));
+//   tr.appendChild(childrenTd);
 
-  const workplaceTd = document.createElement('td');
-  workplaceTd.appendChild(document.createTextNode(employ.workplace));
-  tr.appendChild(workplaceTd);
+//   const workplaceTd = document.createElement('td');
+//   workplaceTd.appendChild(document.createTextNode(employ.workplace));
+//   tr.appendChild(workplaceTd);
 
-  employeeTable.appendChild(tr);
-});
+//   employeeTable.appendChild(tr);
+// });
 
 
 let results = employs.filter((item)=> item.hometown == "Hà Nội" );
+// results.map(employ =>{
+//     const tr = document.createElement('tr');
+
+//   const nameTd = document.createElement('td');
+//   nameTd.appendChild(document.createTextNode(employ.name));
+//   tr.appendChild(nameTd);
+
+//   const ageTd = document.createElement('td');
+//   ageTd.appendChild(document.createTextNode(employ.age));
+//   tr.appendChild(ageTd);
+
+//   const salaryTd = document.createElement('td');
+//   salaryTd.appendChild(document.createTextNode(employ.salary));
+//   tr.appendChild(salaryTd);
+
+//   const hometownTd = document.createElement('td');
+//   hometownTd.appendChild(document.createTextNode(employ.hometown));
+//   tr.appendChild(hometownTd);
+
+//   const jobTd = document.createElement('td');
+//   jobTd.appendChild(document.createTextNode(employ.job));
+//   tr.appendChild(jobTd);
+
+//   const levelTd = document.createElement('td');
+//   levelTd.appendChild(document.createTextNode(employ.level));
+//   tr.appendChild(levelTd);
+
+//   const maritalStatusTd = document.createElement('td');
+//   maritalStatusTd.appendChild(document.createTextNode(employ.maritalStatus));
+//   tr.appendChild(maritalStatusTd);
+
+//   const childrenTd = document.createElement('td');
+//   childrenTd.appendChild(document.createTextNode(employ.children));
+//   tr.appendChild(childrenTd);
+
+//   const workplaceTd = document.createElement('td');
+//   workplaceTd.appendChild(document.createTextNode(employ.workplace));
+//   tr.appendChild(workplaceTd);
+
+//   employeeTable.appendChild(tr);
+// })
 console.log(results);
 
 let results1 = employs.filter((item)=> item.salary >=20000000 && item.children >= 2 )
+// results1.map(employ => {
+//     const tr = document.createElement('tr');
+
+//   const nameTd = document.createElement('td');
+//   nameTd.appendChild(document.createTextNode(employ.name));
+//   tr.appendChild(nameTd);
+
+//   const ageTd = document.createElement('td');
+//   ageTd.appendChild(document.createTextNode(employ.age));
+//   tr.appendChild(ageTd);
+
+//   const salaryTd = document.createElement('td');
+//   salaryTd.appendChild(document.createTextNode(employ.salary));
+//   tr.appendChild(salaryTd);
+
+//   const hometownTd = document.createElement('td');
+//   hometownTd.appendChild(document.createTextNode(employ.hometown));
+//   tr.appendChild(hometownTd);
+
+//   const jobTd = document.createElement('td');
+//   jobTd.appendChild(document.createTextNode(employ.job));
+//   tr.appendChild(jobTd);
+
+//   const levelTd = document.createElement('td');
+//   levelTd.appendChild(document.createTextNode(employ.level));
+//   tr.appendChild(levelTd);
+
+//   const maritalStatusTd = document.createElement('td');
+//   maritalStatusTd.appendChild(document.createTextNode(employ.maritalStatus));
+//   tr.appendChild(maritalStatusTd);
+
+//   const childrenTd = document.createElement('td');
+//   childrenTd.appendChild(document.createTextNode(employ.children));
+//   tr.appendChild(childrenTd);
+
+//   const workplaceTd = document.createElement('td');
+//   workplaceTd.appendChild(document.createTextNode(employ.workplace));
+//   tr.appendChild(workplaceTd);
+
+//   employeeTable.appendChild(tr);
+// })
 console.log(results1);
 
+
+let results2 = employs.filter((item) => item.maritalStatus == "Married");
+results2.map(employ => {
+    const tr = document.createElement('tr');
+    
+    const nameTd = document.createElement('td');
+    nameTd.appendChild(document.createTextNode(employ.name));
+    tr.appendChild(nameTd);
+  
+    const ageTd = document.createElement('td');
+    ageTd.appendChild(document.createTextNode(employ.age));
+    tr.appendChild(ageTd);
+  
+    const salaryTd = document.createElement('td');
+    salaryTd.appendChild(document.createTextNode(employ.salary));
+    tr.appendChild(salaryTd);
+  
+    const hometownTd = document.createElement('td');
+    hometownTd.appendChild(document.createTextNode(employ.hometown));
+    tr.appendChild(hometownTd);
+  
+    const jobTd = document.createElement('td');
+    jobTd.appendChild(document.createTextNode(employ.job));
+    tr.appendChild(jobTd);
+  
+    const levelTd = document.createElement('td');
+    levelTd.appendChild(document.createTextNode(employ.level));
+    tr.appendChild(levelTd);
+  
+    const maritalStatusTd = document.createElement('td');
+    maritalStatusTd.appendChild(document.createTextNode(employ.maritalStatus));
+    tr.appendChild(maritalStatusTd);
+  
+    const childrenTd = document.createElement('td');
+    childrenTd.appendChild(document.createTextNode(employ.children));
+    tr.appendChild(childrenTd);
+  
+    const workplaceTd = document.createElement('td');
+    workplaceTd.appendChild(document.createTextNode(employ.workplace));
+    tr.appendChild(workplaceTd);
+  
+    employeeTable.appendChild(tr);
+  })
+        
+console.log(results2);
